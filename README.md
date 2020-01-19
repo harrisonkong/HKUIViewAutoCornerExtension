@@ -3,7 +3,7 @@
 
 ## INTRODUCTION
 
-Using fixed corner radius in rectangular views often lead to inconsistent results when the device is rotated. This module provides the basic funcationalities to calculate a corner radius dynamically base on one of the sizes.
+Using fixed corner radius in rectangular views often lead to inconsistent results when the device is rotated. This module provides the basic funcationalities to calculate a corner radius dynamically base on one of the sides.
 
 ## HOW IT WORKS
 
