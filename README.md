@@ -24,7 +24,7 @@ Using fixed corner radius in rectangular views often lead to inconsistent result
 
 ## HOW TO USE IT ##
 
-For a use case, see `HKUIView` at ![https://github.com/harrisonkong/HKUIView](https://github.com/harrisonkong/HKUIView)
+For a use case, see `HKUIView` at [HKUIView](https://github.com/harrisonkong/HKUIView)
 
 Base your custom class on UIView or a descendent of UIView. Since extension cannot have variables, descendents should override these four methods to provide the values.
 
@@ -59,7 +59,7 @@ and set the corner radius of the layer. Descendants can call this method when it
 public func updateCornerRadius()
 ```
 
-See also : ![HKUIViewLengthCalculationBasis](https://github.com/harrisonkong/HKUIViewLengthCalculationBasis)
+See also : [HKUIViewLengthCalculationBasis](https://github.com/harrisonkong/HKUIViewLengthCalculationBasis)
 <img src="./docs/cloudline.png" alt="---line---">
 
 ## HOW TO INSTALL IT ##
