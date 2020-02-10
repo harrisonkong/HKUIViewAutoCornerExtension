@@ -4,11 +4,29 @@
 
 <img src="./docs/cloudline.png" alt="---line---">
 
+## VERSION HISTORY ##
+
+1.0.0 - 2020/01/18 - Initial release
+
+## MINIMUM REQUIREMENTS ##
+
+**Swift** 4.0 or above
+
+**iOS** 11.0 or above
+
+<img src="./docs/cloudline.png" alt="---line---">
+
 ## WHAT IS IT? ##
 
 Using fixed corner radius in rectangular views often lead to inconsistent results when the device is rotated or when the view is resized. This module provides the basic funcationalities to calculate a corner radius dynamically base on one of the sides. It is used by many other HK series user interface elements derived from UIView
 
-Since extension cannot have variables, descendents should override these four methods to provide the values.
+<img src="./docs/cloudline.png" alt="---line---">
+
+## HOW TO USE IT ##
+
+For a use case, see `HKUIView` at ![https://github.com/harrisonkong/HKUIView](https://github.com/harrisonkong/HKUIView)
+
+Base your custom class on UIView or a descendent of UIView. Since extension cannot have variables, descendents should override these four methods to provide the values.
 
 ```
 @objc open func autoCornerRoundingBasis() -> LengthCalculationBasis {
@@ -41,6 +59,7 @@ and set the corner radius of the layer. Descendants can call this method when it
 public func updateCornerRadius()
 ```
 
+See also : ![HKUIViewLengthCalculationBasis](https://github.com/harrisonkong/HKUIViewLengthCalculationBasis)
 <img src="./docs/cloudline.png" alt="---line---">
 
 ## HOW TO INSTALL IT ##
