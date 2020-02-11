@@ -22,46 +22,6 @@ Using fixed corner radius in rectangular views often lead to inconsistent result
 
 <img src="./docs/cloudline.png" alt="---line---">
 
-## HOW TO USE IT ##
-
-For a use case, see `HKUIView` at [HKUIView](https://github.com/harrisonkong/HKUIView)
-
-Base your custom class on UIView or a descendent of UIView. Since extension cannot have variables, descendents should override these four methods to provide the values.
-
-```
-@objc open func autoCornerRoundingBasis() -> LengthCalculationBasis {
-    return .shorterEdge
-}
-
-@objc open func autoCornerRoundingConstant() -> CGFloat {
-    return 30.0
-}
-
-@objc open func autoCornerRoundingEnabled() -> Bool {
-    return false
-}
-
-@objc open func autoCornerRoundingFactor() -> CGFloat {
-    return 12.0
-}
-```
-
-Corner radius can be dynamically calculated or set to a constant base on one of the followings:
-
-- the width of the label
-- the height of the label
-- the length of the shorter edge of the label (width or height)
-- the length of the longer edge of the label (width or height)
-  
-and set the corner radius of the layer. Descendants can call this method when it is ready to redraw.
-
-```
-public func updateCornerRadius()
-```
-
-See also : [HKUIViewLengthCalculationBasis](https://github.com/harrisonkong/HKUIViewLengthCalculationBasis)
-<img src="./docs/cloudline.png" alt="---line---">
-
 ## HOW TO INSTALL IT ##
 
 Use one of the following methods:
@@ -100,6 +60,46 @@ UIView+LengthCalculationBasis.swift
 
 <img src="./docs/cloudline.png" alt="---line---">
 
+## HOW TO USE IT ##
+
+For a use case, see `HKUIView` at [HKUIView](https://github.com/harrisonkong/HKUIView)
+
+Base your custom class on UIView or a descendent of UIView. Since extension cannot have variables, descendents should override these four methods to provide the values.
+
+```
+@objc open func autoCornerRoundingBasis() -> LengthCalculationBasis {
+    return .shorterEdge
+}
+
+@objc open func autoCornerRoundingConstant() -> CGFloat {
+    return 30.0
+}
+
+@objc open func autoCornerRoundingEnabled() -> Bool {
+    return false
+}
+
+@objc open func autoCornerRoundingFactor() -> CGFloat {
+    return 12.0
+}
+```
+
+Corner radius can be dynamically calculated or set to a constant base on one of the followings:
+
+- the width of the label
+- the height of the label
+- the length of the shorter edge of the label (width or height)
+- the length of the longer edge of the label (width or height)
+  
+and set the corner radius of the layer. Descendants can call this method when it is ready to redraw.
+
+```
+public func updateCornerRadius()
+```
+
+See also : [HKUIViewLengthCalculationBasis](https://github.com/harrisonkong/HKUIViewLengthCalculationBasis)
+
+<img src="./docs/cloudline.png" alt="---line---">
 
 ## KNOWN ISSUES ##
 
